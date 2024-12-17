@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Accounting.Entities
 {
@@ -15,6 +10,8 @@ namespace Accounting.Entities
         public DateTime Arrival { get; set; }
         public DateTime Departure { get; set; }
 
-        public virtual List<Kid>? Kids { get; set; }
+
+        // Many-to-Many relationship: Calendar entries linked to kids
+        public virtual ICollection<Kid>? Kids { get; set; }
     }
 }

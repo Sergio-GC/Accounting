@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Accounting.Entities
 {
@@ -12,7 +7,14 @@ namespace Accounting.Entities
         [Key]
         public int Id { get; set; }
         public string Name { get; set; }
-        
-        public virtual List<Kid>? Siblings { get; set; }
+
+
+        // Many-to-Many relationship: Self-referencing relationship for siblings
+        public virtual ICollection<Kid>? Siblings { get; set; }
+        public virtual ICollection<Kid>? SiblingOf { get; set; }
+
+
+        // Many-to-Many relationship: Kids participating in calendar entries
+        public virtual ICollection<CalendarEntry>? CalendarEntries { get; set; }
     }
 }
