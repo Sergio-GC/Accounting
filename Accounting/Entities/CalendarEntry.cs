@@ -11,6 +11,9 @@ namespace Accounting.Entities
         public DateTime Departure { get; set; }
 
 
+        public virtual Price? Price { get; set; }
+
+
         // Many-to-Many relationship: Calendar entries linked to kids
         public virtual ICollection<Kid>? Kids { get; set; }
     }
