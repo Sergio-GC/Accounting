@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{4
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AccountingEF", "AccountingEF", "{EAC84A85-EBD5-4DB7-A6C5-AD2A7DFE2878}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountingBLL", "AccountingBLL\AccountingBLL.csproj", "{620B8263-2A56-407E-A82B-601F85776150}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,11 +30,16 @@ Global
 		{4062BF10-CF42-4E75-88D2-7F28D8881ABE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4062BF10-CF42-4E75-88D2-7F28D8881ABE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4062BF10-CF42-4E75-88D2-7F28D8881ABE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{620B8263-2A56-407E-A82B-601F85776150}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{620B8263-2A56-407E-A82B-601F85776150}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{620B8263-2A56-407E-A82B-601F85776150}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{620B8263-2A56-407E-A82B-601F85776150}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{62B9BC6E-63BA-4D7E-BCD1-8E5C105F7F38} = {EAC84A85-EBD5-4DB7-A6C5-AD2A7DFE2878}
+		{620B8263-2A56-407E-A82B-601F85776150} = {EAC84A85-EBD5-4DB7-A6C5-AD2A7DFE2878}
 	EndGlobalSection
 EndGlobal
