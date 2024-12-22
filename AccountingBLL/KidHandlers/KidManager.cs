@@ -1,7 +1,7 @@
 ﻿using Accounting;
 using Accounting.Entities;
 
-namespace AccountingBLL
+namespace AccountingBLL.KidHandlers
 {
     public class KidManager : IKidManager
     {

@@ -1,6 +1,6 @@
 ﻿using Accounting.Entities;
 
-namespace AccountingBLL
+namespace AccountingBLL.KidHandlers
 {
     public interface IKidManager
     {
